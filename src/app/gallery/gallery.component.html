@@ -3,14 +3,16 @@
   <p>Nenhuma foto</p>
 </div>
 <div *ngIf="photos.length > 0">
-  <img [src]="photos[currentImg]" alt="" />
-</div>
+  <img [src]="photos[currentImg]" />
 
-<button [disabled]="currentImg === 0" (click)="firstImg()"><<</button>
-<button [disabled]="currentImg === 0" (click)="previous()"><</button>
-<button [disabled]="currentImg === photos.length - 1" (click)="next()">
-  >
-</button>
-<button [disabled]="currentImg === photos.length - 1" (click)="finalImg()">
-  >>
-</button>
+  <div>Foto {{ currentImg + 1 }} de {{ photos.length }}</div>
+
+  <button [disabled]="currentImg === 0" (click)="firstImg()"><<</button>
+  <button [disabled]="currentImg === 0" (click)="previous()"><</button>
+  <button [disabled]="currentImg === photos.length - 1" (click)="next()">
+    >
+  </button>
+  <button [disabled]="currentImg === photos.length - 1" (click)="finalImg()">
+    >>
+  </button>
+</div>

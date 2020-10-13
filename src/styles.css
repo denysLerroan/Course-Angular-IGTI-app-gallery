@@ -1,5 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
+
 img {
-  max-width: 500px;
+  max-width: 400px;
   max-height: 500px;
+  border-radius: 20px;
+  box-shadow: -5px 5px 20px rgb(245, 217, 255);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: 0.8s;
+  transition: opacity 500ms;
+}
+
+img:hover {
+  max-width: 1000px;
+  max-height: 700px;
+  transition: 0.5s;
+}
+
+button {
+  background-color: rgb(162, 0, 255);
+  color: white;
+  font-weight: bolder;
+  padding: 5px 20px 5px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+button:disabled {
+  background-color: rgba(109, 109, 226, 0.404);
+}
+button:focus {
+  background-color: rgb(92, 92, 240);
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.918);
 }
