@@ -23,6 +23,6 @@ export class GalleryComponent {
   }
 
   finalImg() {
-    this.currentImg = this.photos.length;
+    this.currentImg = this.photos.length - 1;
   }
 }

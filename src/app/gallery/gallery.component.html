@@ -6,6 +6,11 @@
   <img [src]="photos[currentImg]" alt="" />
 </div>
 
-<button (click)="firstImg()"><<</button>
-<button (click)="previous()"><</button>
-<button (click)="next()">></button>
+<button [disabled]="currentImg === 0" (click)="firstImg()"><<</button>
+<button [disabled]="currentImg === 0" (click)="previous()"><</button>
+<button [disabled]="currentImg === photos.length - 1" (click)="next()">
+  >
+</button>
+<button [disabled]="currentImg === photos.length - 1" (click)="finalImg()">
+  >>
+</button>
