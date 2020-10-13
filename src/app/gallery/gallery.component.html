@@ -1,0 +1,10 @@
+<h1>{{ title }}</h1>
+<div *ngIf="!photos.length">
+  <p>Nenhuma foto</p>
+</div>
+<div *ngIf="photos.length > 0">
+  <img [src]="photos[currentImg]" alt="" />
+</div>
+
+<button (click)="previous()"><</button>
+<button (click)="next()">></button>

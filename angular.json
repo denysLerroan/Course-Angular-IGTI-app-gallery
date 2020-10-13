@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "galeria-fotos"
+    }
+  },
+  "defaultProject": "galeria-fotos",
+  "cli": {
+    "analytics": false
+  }
 }
